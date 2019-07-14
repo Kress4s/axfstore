@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extJS %}
+    {{ block.super }}
+{#    <script type="text/javascript" src="{%  static 'app/order/' %}"></script>#}
+
+{% endblock %}
+
+
+{% block content %}
+    <h6>未付款的订单</h6>
+    <ul>
+   {% for order in orders %}
+       <li>
+       订单编号: <span>{{ order.o_num }}</span>
+       <button>去付款</button>
+       </li>
+   {% endfor %}
+   </ul>
+
+{% endblock %}
+
+
+
+
+
