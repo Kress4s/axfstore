@@ -233,7 +233,8 @@ def register(request):
 
 #密码处理
 def createPwd(password):
-    mysha512 = hashlib.sha512()
+    # mysha512 = hashlib.sha512()
+    hashlib.sha512()
     mysha512.update(password.encode("utf-8"))
     return  mysha512.hexdigest()
 
