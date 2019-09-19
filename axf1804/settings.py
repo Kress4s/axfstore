@@ -27,9 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*",]
 
-
-# Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -126,7 +123,7 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR,"static")]
 
-MEDIA_ROOT = os.path.join(BASE_DIR,r"static/media")
+MEDIA_ROOT = os.path.join(BASE_DIR,"static/media")
 
 
 
